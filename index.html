@@ -1,290 +1,347 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta name="viewport" content="width-device-width, initial-scale=1.0">
-		<meta charset="utf-8">
-		<title>Deveppement Web</title>
-		<link rel="stylesheet" href="mong.css">
-		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-	</head>
-	<body>
-		<header id="header">
-			<a href="#" class="logo"><img src="ci.png"></a>
-			<ul>
-				<li><a class="u" href="#home" onclick="toggle()">Accueil</a></li>
-				<li><a class="u" href="#about" onclick="toggle()">A Propos</a></li>
-				<li><a class="u" href="#services" onclick="toggle()">Services</a></li>
-				<li><a class="u" href="#portfolio" onclick="toggle()">Portfolio</a></li>
-				<li><a class="u" href="#team" onclick="toggle()">Team</a></li>
-				<li><a class="u" href="#contact" onclick="toggle()">Contact</a></li>
-			</ul>
-			<div class="toggle" onclick="toggle()"></div>
-		</header>
-		<section class="banner" id="home">
-			<h2>Nous faisons<br><span>du developpement </span>votre solution</h2>
-		</section>
-		<section class="sec" id="about">
-			<div class="content">
-				<div class="mxw800p">
-					<h3>Qui Sommes Nous</h3>
-						<p>Le terme « développeur » s'applique en informatique à une personne ou une société 
-						qui développe et conçoit des logiciels, des sites web et leurs maintenances etc. Cependant, s'agissant d'une personne, 
-						il est possible de distinguer les développeurs par secteurs d'activités, 
-						ceux spécialisés dans le métier du logiciel, ou ceux spécifiquement spécialisés dans les métiers
-						de l'Internet, et du secteur des technologies de l'information et de la communication (TIC).</p>
-					<a href="#gh" class="btn">Lire Notre Parcours >></a>
-				</div>
+
+<head>
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>Agence de solutions numériques</title>
+	<link rel="stylesheet" href="mong.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+	<header id="header">
+		<a href="#" class="logo">
+			<p class="logo">Xaragne digital</p>
+			</p><!--<img src="ci.png">-->
+		</a>
+		<ul>
+			<li><a class="u" href="#home" onclick="toggle()">Accueil</a></li>
+			<li><a class="u" href="#about" onclick="toggle()">Présentation</a></li>
+			<li><a class="u" href="#services" onclick="toggle()">Services</a></li>
+			<li><a class="u" href="#portfolio" onclick="toggle()">Réalisations</a></li>
+			<li><a class="u" href="#team" onclick="toggle()">Team</a></li>
+			<li><a class="u" href="#contact" onclick="toggle()">Contact</a></li>
+		</ul>
+		<div class="toggle" onclick="toggle()"></div>
+	</header>
+	<section class="banner" id="home">
+		<div>
+			<p class="slogan">A vos idées,<br><span>nos solutions numériques !</span></p>
+		</div>
+
+		<div class="res">
+			<p class="rs">
+				<i class="fas fa-phone" style="color: #004c98;"></i> : +221 77 868 79 66
+			</p>
+			<p class="rs">
+				<i class="far fa-envelope" style="color: #004c98;"></i> : <a href="mailto:wadebabacar52@gmail.com"
+					style="text-decoration: none; color: inherit;">wadebabacar52@gmail.com</a>
+			</p>
+			<div>
+				<button class="début" id="début" href="#services" onclick="toggle()">Nos services</button>
 			</div>
-		</section>
-		<section class="sec" id="services">
+			<script>
+				document.getElementById("début").addEventListener("click", function () {
+					var sectionServices = document.getElementById("services");
+					sectionServices.scrollIntoView({ behavior: 'smooth' });
+				});
+			</script>
+		</div>
+
+	</section>
+
+	<section class="about" id="about">
+		<div class="contentabout">
+			<div class="mxw800p">
+				<h3 class="titre">Qui sommes nous</h3>
+				<p>Chez <b>Xaragne digital</b>, nous sommes une équipe passionnée de
+					professionnels
+					du numérique, dédiés à créer des solutions innovantes
+					et personnalisées pour répondre à vos besoins en ligne</p>
+				<div class="valeurs">
+
+					<div class="droite">
+						<p class="mission"><b>Mission</b></p>
+						<p class="detailsabout">Donner vie à vos idées en les transformant en réalité numérique. Nous
+							travaillons en étroite collaboration avec vous pour comprendre vos objectifs et
+							vos défis, afin de créer des solutions numériques personnalisées qui surpassent vos
+							attentes.
+						</p>
+						<p class="vision"><b>Vision</b></p>
+						<p class="detailsabout">
+							Être le partenaire de choix pour la transformation numérique, reconnu pour notre capacité à
+							comprendre profondément les besoins de nos clients et à fournir des solutions innovantes et
+							efficaces qui propulsent leur succès dans le monde numérique. Nous aspirons à devenir un
+							leader de l'innovation numérique, en aidant les entreprises à évoluer et à prospérer dans un
+							environnement technologique en constante mutation.
+						</p>
+						<p class="valeurs"><b>Valeurs</b></p>
+						<p class="detailsabout"><b>Collaboration:</b> Travailler main dans la main avec nos clients pour
+							s'assurer que chaque solution répond précisément à leurs besoins.<br>
+							<b>Écoute:</b> Mettre un point d'honneur à écouter activement pour bien comprendre les
+							attentes et
+							les objectifs de nos clients.<br>
+							<b>Excellence:</b> Viser à dépasser les attentes grâce à des solutions numériques de haute
+							qualité.
+						</p>
+
+
+					</div>
+
+
+				</div>
+
+				<!--<p>Notre approche est centrée sur le client. Nous croyons que chaque projet est unique, et nous 
+								travaillons en étroite collaboration avec vous pour comprendre vos objectifs, vos défis et vos aspirations. Nous 
+								mettons un point d'honneur à écouter, à apprendre et à évoluer pour fournir des solutions numériques qui dépassent vos attentes.
+							</p>
+							<p>Notre équipe diversifiée et talentueuse est composée de développeurs web, de designers, de spécialistes en marketing en ligne, 
+								et d'experts en technologie. Chacun d'entre nous apporte son savoir-faire unique pour offrir une gamme complète de services numériques, 
+								de la conception et du développement de sites web à la stratégie de marketing en ligne et au support technique.
+							</p>
+							<br>Nous sommes fiers de notre engagement envers l'excellence, l'innovation et la satisfaction du client. Chez [Votre Nom d'Entreprise],
+							 nous sommes plus qu'un simple prestataire de services, nous sommes votre partenaire de confiance dans le monde numérique. 
+							 Nous nous réjouissons de travailler avec vous pour créer une présence en ligne qui se démarque et qui propulse votre entreprise
+							  vers de nouveaux sommets.</p>
+					<a href="#gh" class="btn">Lire Notre Parcours >></a>-->
+			</div>
+		</div>
+
+	</section>
+	<!--<section class="sec" id="services">
 			<div class="content">
 				<div class="mxw800p">
 					<h3>Nos Domaines d'Expertises</h3>
-					<p>C.I vous offre des services d'expertises et de qualités dans beaucoup de domaines informatiques.</p>
+					<p>Xaragne digital vous offre des services d'expertises et de qualités dans beaucoup de domaines informatiques.</p>
 				</div>
 				<div class="services">
-					<div class="box">
-						<div class="iconBx">
-							<img src="wbsit.png" class="icon1.png">
-						</div>
-						<div class="content">
-							<h2>Developpement Site Web</h2>
-							<p class="j">Site Web vitrine: Faites la promotion de votre entreprise, votre marque, de vos produits ou 
-							de votre organisation auprès du grand publics.</p>
-							<p class="j">Site Web d'information: Relayer des informations rapides, sûres et fiables via la toile.</p>
-							<p class="j">Site Web de vente en ligne: Mettez en ligne vos produits et effectuez des ventes via 
-							les réseaux informatiques.</p>
-							<a href="#ap" class="ap">Détails de création >></a>
+					<div class="webbox">
+						
+						<div class="sitewebcontent">
+							<h2 class="titreservice">Développement d'applications web</h2>
+							<p class="j">Nous concevons des applications web sur mesure pour répondre à vos besoins spécifiques, en combinant une expertise technique avancée avec une conception conviviale pour offrir des solutions numériques de pointe. Notre équipe dédiée travaille en étroite collaboration avec vous pour donner vie à vos idées, en assurant un développement rapide et de qualité.</p>
 						</div>	
 					</div>
-					<div class="box">
-						<div class="iconBx">
-							<img src="apk.png" class="icon1.png">
-						</div>
-						<div class="content">
-							<h2>Developpement APK Mobile</h2>
-							<p class="j">Pour plus d'accessibilité à vos activités, nous vous proposons des applications mobiles adaptées
-							sur toutes les smartphones et tablettes. Des applications avec des designs exceptionnels, 
-							des graphismes de haute definition. Scotcher vos clients devant leurs écrans à travail des interfaces utilisateurs 
-							surréalistes.<br><br><br></p>
+					<div class="mobilebox">
+						
+						<div class="mobilecontent">
+							<h2 class="titreservice">Développement d'applications mobile</h2>
+							<p class="j">Notre service de développement d'applications mobiles personnalisées, adaptées à vos besoins spécifiques, met l'accent sur une expérience utilisateur exceptionnelle. De la planification à la publication, notre équipe experte vous guide à chaque étape pour que votre application mobile se démarque sur iOS et Android.</p>
 							
 						</div>
-							<a href="#ap" class="ap">Détails de création >></a>
+
 					</div>
-					<div class="box">
-						<div class="iconBx">
-							<img src="adm.png" class="icon1.png">
+					<div class="uiuxbox">
+						
+						<div class="uiuxcontent">
+							<h2 class="titreservice">Ingraphie UI/UX design</h2>
+							<p class="j">Offrez à votre public une expérience visuelle exceptionnelle grâce à notre service d'infographie créative, mettant en avant des données complexes de manière claire et attrayante. Notre expertise en design UI/UX assure une navigation fluide et intuitive pour des sites web et des applications qui captivent et fidélisent les utilisateurs.</p>
 						</div>
-						<div class="content">
-							<h2>Administrateur LMS & CMS</h2>
-							<p class="j">Nos administrateurs vous proposent des logiciels d'accompagnement et de gestion de 
-							votre processus d'apprentissage via des « plateforme d'apprentissage ». 
-							Nous vous offrons aussi le service système de gestion de base de données pour le stock 
-							d'informations et de données de votre entreprise.<br><br><br></p>
-						</div>
-						<a href="#ap" class="ap">Détails de création >></a>
 					</div>
-					<div class="box">
-						<div class="iconBx">
-							<img src="des.png" class="icon1.png">
-						</div>
-						<div class="content">
-							<h2>Web Design</h2>
-							<p class="j">Avez-vous déjà un projet de sites ? Choisissez parmi nos design des interfaces de haute game adaptés à vos idées.
-							Vous trouverez ici les meilleures architectures interactionnelles. 
-							Faites vivre à vos clients des experiences inoubliables.</p>
-						</div>
-						<a href="#ap" class="ap">Plus de détails >></a>
+					
+					
+				</div>
+		</section>-->
+	<section class="secservices" id="services">
+		<div class="content">
+			<div class="mxw800p">
+				<h3 class="titre">Nos domaines d'expertise</h3>
+				<p>Xaragne digital vous offre des services d'expertises et de qualités dans beaucoup de domaines
+					informatiques.</p>
+			</div>
+			<div class="services">
+				<div class="box">
+					<div class="iconBx">
+						<img src="website.png" class="icon1">
 					</div>
-					<div class="box">
-						<div class="iconBx">
-							<img src="dev.png" class="icon2.png">
-						</div>
-						<div class="content">
-							<h2>Webmastering</h2>
-							<p class="j">Mettez du dynamisme à votre site web avec une gestion des mise à jours, sa conception graphique et 
-							éditoriale, à sa maintenance en passant par sa mise en place technique et son animation 
-							au quotidien.<br><br> </p>
-						</div>	
-						<a href="#ap" class="ap">Plus de détails >></a>
-					</div>
-					<div class="box">
-						<div class="iconBx">
-							<img src="maint.png" class="icon3.png">
-						</div>
-						<div class="content">
-							<h2>Maintenance</h2>
-							<p class="j">Installation de système d'exploitation: nous vous offrons des services d'installation 
-							de systèmes d'exploitaions windows, unix, mac Os etc.Réinitialisation de machine, 
-							formatage, installation d'antivirus et tout type de disfonctionnement.<br><br></p>
-						</div>	
-						<a href="#ap" class="ap">Plus de détails >></a>
+					<div class="content">
+						<h2>Développement d'applications web</h2>
+						<!--<p class="j">Offrez à votre entreprise une vitrine digitale qui la distingue. Notre service de développement web crée des sites sur mesure, fusionnant technologie de pointe et design captivant.</p>
+							-->
 					</div>
 				</div>
-		</section>
-		<section class="sec stats">
-			<div class="content">
-				<div class="mxw800p">
-					<h3>Nos Réalisations</h3>
-					<p></p>
-				</div>
-				<div class="statsBox">
-					<div class="box">
-						<h2>+100</h2>
-						<h4>Projets</h4>
+				<div class="box">
+					<div class="iconBx">
+						<img src="agenda.png" class="icon1">
 					</div>
-					<div class="box">
-						<h2>+200</h2>
-						<h4>Clients Satisfaits</h4>
+					<div class="content">
+						<h2>Développement d'applications mobile</h2>
+						<!--<p class="j">Explorez de nouveaux horizons avec notre service de développement mobile. Des applications dynamiques et innovantes, taillées pour une expérience fluide et immersive sur tous les appareils.</p>
+							-->
 					</div>
 
 				</div>
+				<div class="box">
+					<div class="iconBx">
+						<img src="padlock.png" class="icon1">
+					</div>
+					<div class="content">
+						<h2>Conseils en cybersécurité</h2>
+						<!--<p class="j">Sécurisez votre entreprise avec notre expertise en cybersécurité. Des conseils personnalisés pour protéger vos données et naviguer en toute confiance dans le monde numérique.</p>
+							-->
+					</div>
+
+				</div>
+				<div class="box">
+					<div class="iconBx">
+						<img src="web-design.png" class="icon1">
+					</div>
+					<div class="content">
+						<h2>Infographie, UI/UX design</h2>
+						<!--<p class="j">Découvrez un univers visuel captivant avec notre service de création d'infographies. Des designs percutants et informatifs qui donnent vie à vos données et captivent votre audience en un coup d'œil.</p>
+							-->
+					</div>
+
+				</div>
+
+
 			</div>
-		</section>
-		<section class="sec work" id="portfolio">
-			<div class="content">
-				<div class="mxw800p">
-					<h3>Travaux Récents</h3>
-					<p>Admirez nos dernières activités</p>
+	</section>
+	<section class="stats">
+		<div class="content">
+
+			<div class="statsBox">
+				<div class="box">
+					<h2>Client 1</h2>
+					<h4>Témoignages</h4>
 				</div>
-				<div class="workBx">
-					<div class="brand">
-						<a href="#"><h2>Logo</h2></a>
+				<div class="box">
+					<h2>Client 2</h2>
+					<h4>Témoignages</h4>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="sec work" id="portfolio">
+		<div class="content">
+			<div class="mxw800p">
+				<h3 class="titre">Réalisations</h3>
+				<p>Admirez nos derniers projets</p>
+			</div>
+			<div class="workBx">
+				<div class="xdigital" id="brand">
+					<a href="#">
+						<h2>voir</h2>
+					</a>
+				</div>
+				<div class="babswade-online" id="brand">
+					<a href="https://babswade-online.000webhostapp.com/accueil" target="_blank">
+						<h2>voir</h2>
+					</a>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<section class="sec" id="team">
+		<div class="content">
+			<div class="mxw800p">
+				<h3 class="titre">Rencontrer nos experts</h3>
+				<p>Notre équipe diversifiée et talentueuse qui vous accompagne</p>
+			</div>
+			<div class="teamBx">
+				<div class="member">
+					<div class="imgBx">
+						<img src="moi.jpg">
 					</div>
-					<div class="brand">
-						<a href="#"><h2>Logo</h2></a>
+					<div class="details">
+						<div>
+							<h2>Babacar Wade<br><span>Développeur web & mobile, Full Stack</span></h2>
+							<a id="linkedin_bw" href="https://www.linkedin.com/in/babacar-wade/" target="_blank"><i class="fab fa-linkedin"></i></a>
+						</div>
 					</div>
-					<div class="brand">
-						<a href="#"><h2>Logo</h2></a>
+				</div>
+				<div class="member">
+					<div class="imgBx">
+						<img src="mo">
 					</div>
-					<div class="brand">
-						<a href="#"><h2>Logo</h2></a>
+					<div class="details">
+						<div>
+							<h2><br><span>UI/UX designer</span></h2>
+						</div>
 					</div>
-					<div class="brand">
-						<a href="#"><h2>Logo</h2></a>
+				</div>
+				<div class="member">
+					<div class="imgBx">
+						<img src="mo">
 					</div>
-					<div class="brand">
-						<a href="#"><h2>Logo</h2></a>
+					<div class="details">
+						<div>
+							<h2><br><span>Assistant communication digitale</span></h2>
+						</div>
 					</div>
-					<div class="brand">
-						<a href="#"><h2>Logo</h2></a>
-					</div>		
-					<div class="brand">
-						<a href="#"><h2>Logo</h2></a>
+				</div>
+				<div class="member">
+					<div class="imgBx">
+						<img src="mo">
+					</div>
+					<div class="details">
+						<div>
+							<h2><br><span>Analyste en cybersécurité</span></h2>
+						</div>
 					</div>
 				</div>
 			</div>
-		</section>
-		<section class="sec" id="team">
-			<div class="content">
-				<div class="mxw800p">
-					<h3>Rencontrer Nos Experts</h3>
-					<p>Notre equipe de spécialistes pour mieux vous servir</p>
-				</div>
-				<div class="teamBx">
-					<div class="member">
-						<div class="imgBx">
-							<img src="mo">
-						</div>
-						<div class="details">
-							<div>
-								<h2>Babacar Wade<br><span>Administrateur</span></h2>
-							</div>
-						</div>
-					</div>
-					<div class="member">
-						<div class="imgBx">
-							<img src="mo">
-						</div>
-						<div class="details">
-							<div>
-								<h2>Mansour Ndiaye<br><span>Developpeur</span></h2>
-							</div>
-						</div>
-					</div>
-					<div class="member">
-						<div class="imgBx">
-							<img src="mo">
-						</div>
-						<div class="details">
-							<div>
-								<h2>Moussa Gueye<br><span>Webmaster</span></h2>
-							</div>
-						</div>
-					</div>
-					<div class="member">
-						<div class="imgBx">
-							<img src="mo">
-						</div>
-						<div class="details">
-							<div>
-								<h2>Amath Diop<br><span>Maintenancier</span></h2>
-							</div>
-						</div>
-					</div>
-				</div>
+		</div>
+	</section>
+	<section class="sec contact" id="contact">
+		<div class="content">
+			<div class="mxw800p">
+				<h3 class="titre">Nous contacter</h3>
+				<p>Laissez-nous un message et faites nous part de vos avis</p>
 			</div>
-		</section>	
-		<section class="sec contact" id="contact">
-			<div class="content">
-				<div class="mxw800p">
-					<h3>Evoyer Nous Un Message</h3>
-					<p>Laissez-nous un message et faites nous part de vos avis.</p>
-				</div>
-				<div class="contactForm">
-					<form action="mailto:complexeinformtiquedwmg@gmail.com" method="post">
-						<div class="row100">
-							<div class="inputBx50">
-								<input type="text" name="" placeholder="Full Name">
-							</div>
-							<div class="inputBx50">
-								<input type="text" name="" placeholder="Email Address">
-							</div>
+			<!--<div class="contactForm">
+				<form action="mailto:complexeinformtiquedwmg@gmail.com" method="post">
+					<div class="row100">
+						<div class="inputBx50">
+							<input type="text" name="" placeholder="Full Name">
 						</div>
-						<div class="row100">
-							<div class="inputBx100">
-								<textarea placeholder="Message"></textarea>
-							</div>
+						<div class="inputBx50">
+							<input type="text" name="" placeholder="Email Address">
 						</div>
-						<div class="row100">
-							<div class="inputBx100">
-								<input type="submit" name="" value="Send">
-							</div>
+					</div>
+					<div class="row100">
+						<div class="inputBx100">
+							<textarea placeholder="Message"></textarea>
 						</div>
-					</form>
-				</div>
-				<p class="fl">Suivez-Nous</p>
-				<div class="sci">
-					<ul>
-						<li class="li1"><a href="mapgefb" class="a1" href="#"><i class="fab fa-facebook-f"></i></a></li>
-						<li class="li1"><a href="mncmptwt" class="a2" href="#"><i class="fab fa-twitter"></i></a></li>
-						<li class="li1"><a href="mncmptist" class="a3" href="#"><i class="fab fa-instagram"></i></a></li>
-						<li class="li1"><a href="mapgrytb" class="a4" href="#"><i class="fab fa-youtube"></i></a></li>
-					</ul> 
-				</div>
-				<p class="copyright">&#169 Copyright 2020 | Proudly Designed & Developed by <a class="bw" href="#">Babacar Wade</a></p>
+					</div>
+					<div class="row100">
+						<div class="inputBx100">
+							<input type="submit" name="" value="Send">
+						</div>
+					</div>
+				</form>
+			</div>-->
+			<p class="fl">Suivez-Nous</p>
+			<div class="sci">
+				<ul>
+					<li class="li1"><a href="mapgefb" class="a1" href="#"><i class="fab fa-facebook-f"></i></a></li>
+					<li class="li1"><a href="mapgefb" class="a1" href="#"><i class="fab fa-linkedin"></i></a></li>
+					<li class="li1"><a  class="a2" href="https://x.com/xaragnedigital" target="_blank"><i class="fab fa-twitter"></i></a></li>
+					<li class="li1"><a href="mncmptist" class="a3" href="#"><i class="fab fa-instagram"></i></a></li>
+					<li class="li1"><a href="mapgrytb" class="a4" href="#"><i class="fab fa-youtube"></i></a></li>
+				</ul>
 			</div>
-		</section>
-		
-		<script type="text/javascript">
-			window.addEventListener("scroll", function(){
+			<p class="copyright">&#169 Copyright 2020 | Proudly Designed & Developed by <a class="bw" href="https://babswade-online.000webhostapp.com/" target="_blank">Babacar	Wade</a></p>
+		</div>
+	</section>
+
+	<script type="text/javascript">
+		window.addEventListener("scroll", function () {
 			var header = document.querySelector("header");
 			header.classList.toggle("sticky", window.scrollY > 0);
-			})
-			function toggle(){
+		})
+		function toggle() {
 			var header = document.querySelector("header");
 			header.classList.toggle("active");
-			}
-		</script>
-	
-	</body>
+		}
+	</script>
+
+</body>
+
 </html>
-	
-	
-	
-	
-	
-	
-	
-	
-	
